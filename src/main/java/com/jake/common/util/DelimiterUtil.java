@@ -65,6 +65,7 @@ public class DelimiterUtil {
 
 	/**
 	 * 구분자로 이루어진 문자열을 Set 형태로 변환한다.
+	 * (순서 보장)
 	 *
 	 */
 	public static <E> Set<E> decodeToSet(String source, String delimiter) {
