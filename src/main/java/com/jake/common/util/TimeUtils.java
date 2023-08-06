@@ -13,7 +13,7 @@ import java.util.Locale;
  * JVM 구동때 user.timezone 미 지정시 구동 OS의 타임존을 참고함</br>
  * ZoneId.systemDefault() 또한 구동 OS의 타임존을 참고함</br>
  */
-public final class TimeUtil {
+public final class TimeUtils {
 
 	public static final ZoneId SYS_ZID = ZoneId.of("UTC");
 	public static ZoneOffset SYS = toZoneOffset();

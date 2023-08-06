@@ -1,6 +1,5 @@
 package com.jake.common.util;
 
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -14,14 +13,14 @@ public class DelimiterUtilTest {
 	@Test
 	void encodeTest() {
 		List<String> data = Arrays.asList("one","two","three");
-		String encodedData = DelimiterUtil.encode(data);
+		String encodedData = DelimiterUtils.encode(data);
 		assertEquals("one|two|three", encodedData);
 	}
 
 	@Test
 	void encodeEmptyTest() {
 		List<String> data = new ArrayList<>();
-		String encodedData = DelimiterUtil.encode(data);
+		String encodedData = DelimiterUtils.encode(data);
 		assertEquals("", encodedData);
 	}
 }

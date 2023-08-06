@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * 문자열 분할/병합 처리 유틸
  */
-public class DelimiterUtil {
+public class DelimiterUtils {
 
 	public static final String DELIMITER_SHARP = "#";
 	public static final String DELIMITER_PIPE = "|";
