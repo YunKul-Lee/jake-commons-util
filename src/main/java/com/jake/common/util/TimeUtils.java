@@ -107,4 +107,11 @@ public final class TimeUtils {
 		cal.set(Calendar.MILLISECOND, 0);
 		return cal.getTimeInMillis();
 	}
+
+	public static Period getPeriod(long startTime, long endTime) {
+		LocalDate startDate = (new Date(startTime)).toInstant().atZone(ZoneId.of("UTC")).toLocalDate();
+		LocalDate endDate = (new Date(endTime)).toInstant().atZone(ZoneId.of("UTC")).toLocalDate();
+
+		return Period.between(startDate, endDate);
+	}
 }
